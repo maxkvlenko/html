@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        h1 {
+          font-size: 50px;
+          color: #6E76F1;
+        }
+    
+        div {
+          margin: 0 auto;
+        }
+    
+        .form-container {
+          width: 400px;
+          padding: 20px;
+        }
+        body {
+        max-width: 800px;
+        margin: 0 auto;
+        }
+      </style>
+</head>
+</head>
+<body>
+  <h1>Запись на курсы</h1>
+  <hr>
+  <form>
+      <p>Имя:</p>
+      <p><input name="name"></p>
+  </form>
+  <form>
+    <p>Язык программирования:</p>
+    <p><input name="m" type="radio" value="C"> C++</p> 
+    <p><input name="m" type="radio" value="php"> PHP</p> 
+    <p><input name="m" type="radio" value="pyth"> Python</p> 
+  </form>
+  <form>
+    <p>Дополнительная информация:</p>
+    <p><textarea rows="10" cols="40" name="text"></textarea></p>
+    </form>
+    <form>
+      <p>Серетное поле:</p>
+      <p><input type="password" name="secret"></p>
+  </form>
+  <p><input type="submit" value="Отправить">  <input type="submit" value="Очистить"></p>
+
+  <form>
+    <fieldset>
+       <legend>Параметры автомобиля</legend>
+       <p>Марка автомобиля: <input name="auto"></p>
+       <p>Объем двигателя, см<sup>3</sup>: <input name="engine" placeholder="1900" ></p>
+        <p>Область: 
+          <select атрибуты>
+            <option атрибуты>Брестская</option>
+            <option атрибуты>Витебская</option>
+            <option атрибуты>Гомельская</option>
+            <option атрибуты>Гродненская</option>
+            <option атрибуты>Минская</option>
+            <option атрибуты>Могилевская</option>
+          </select>
+        </p>
+        <form>
+        <p>Тип КПП</p>
+        <p><input name="a" type="radio" value="A"> Автомат</p> 
+        <p><input name="m" type="radio" value="M"> Механика</p>   
+        </form> 
+        <form>
+          <p>Двигатель</p> 
+          <p><input id="engine1" type="checkbox">
+          <label for="engine1"> Электро</label></p>
+          <p><input id="engine2" type="checkbox">
+          <label for="engine2"> Дизель</label></p>
+          <p><input id="engine3" type="checkbox">
+          <label for="engine3"> Бензин</label></p>
+          <p><input id="engine4" type="checkbox">
+          <label for="engine4"> Пропан-бутан</label></p>
+          <p><input id="engine5" type="checkbox">
+          <label for="engine5"> Метан</label></p>
+        </form>  
+<form>
+<p>Описание</p>
+<p><textarea rows="10" cols="40" name="info"></textarea></p>
+<p><input type="submit" value="Отправить"> <input type="submit" value="Очистить"></p>    
+</form>
+
+</form>
+</fieldset>
+</body>
+</html>

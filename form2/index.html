@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <style>
+        h1 {
+          font-size: 50px;
+          color: #6E76F1;
+        }
+    
+        div {
+          margin: 0 auto;
+        }
+    
+        .form-container {
+          width: 400px;
+          padding: 20px;
+        }
+        body {
+        max-width: 800px;
+        margin: 0 auto;
+        }
+      </style>
+</head>
+<body>
+  <form>
+    <fieldset>
+       <legend>Регистрационная форма пользователя</legend>
+       <p>Имя: <input name="name"></p>
+       <p>Укажите возраст: 
+          <select атрибуты>
+            <option атрибуты>10-15 лет</option>
+            <option атрибуты>15-20 лет</option>
+            <option атрибуты>20-30 лет</option>
+            <option атрибуты>30-40 лет</option>
+            <option атрибуты>Старше 40 лет</option>
+          </select>
+       </p>
+       <p>Укажите пол: 
+        <form>
+        мужской<input name="m" type="radio" value="men"> женский<input name="w" type="radio" value="women">   
+        </form> 
+       </p>
+       <p>Страна проживания: 
+          <select атрибуты>
+            <option атрибуты>Беларусь</option>
+            <option атрибуты>Российская Федерация</option>
+            <option атрибуты>Другое государство</option>
+          </select>
+       </p>
+       <form>
+          <p>Владение языками: 
+        
+          <label for="text1">русский</label>
+          <input id="text1" type="checkbox">
+          <label for="text2">белорусский</label>
+          <input id="text2" type="checkbox">          
+          <label for="text3">английский</label>
+          <input id="text3" type="checkbox">  
+        </p>
+        </form>  
+       
+
+       <p>Фото профиля: <input type="submit" value="Обзор..."></p>
+       </p>
+
+       <p>Введите логин: <input name="login"></p>
+       <p>Введите пароль: <input type="password" name="pass"></p>
+       <p>Повторите пароль: <input type="password2" name="pass2"></p>
+       </fieldset>
+       <p><input type="submit" value="Сброс">  <input type="submit" value="Отправить"></p>
+      </form>
+ 
+
+</body>
+</html>
