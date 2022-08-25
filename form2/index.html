@@ -32,24 +32,24 @@
        <legend>Регистрационная форма пользователя</legend>
        <p>Имя: <input name="name"></p>
        <p>Укажите возраст: 
-          <select атрибуты>
-            <option атрибуты>10-15 лет</option>
-            <option атрибуты>15-20 лет</option>
-            <option атрибуты>20-30 лет</option>
-            <option атрибуты>30-40 лет</option>
-            <option атрибуты>Старше 40 лет</option>
+          <select name="age">
+            <option value="age1">10-15 лет</option>
+            <option value="age2">15-20 лет</option>
+            <option value="age3">20-30 лет</option>
+            <option value="age3">30-40 лет</option>
+            <option value="age4">Старше 40 лет</option>
           </select>
        </p>
        <p>Укажите пол: 
         <form>
-        мужской<input name="m" type="radio" value="men"> женский<input name="w" type="radio" value="women">   
+        мужской<input name="sex" type="radio" value="men"> женский<input name="sex" type="radio" value="women">   
         </form> 
        </p>
        <p>Страна проживания: 
-          <select атрибуты>
-            <option атрибуты>Беларусь</option>
-            <option атрибуты>Российская Федерация</option>
-            <option атрибуты>Другое государство</option>
+          <select name="country">
+            <option value="coun1">Беларусь</option>
+            <option value="coun2">Российская Федерация</option>
+            <option value="coun3">Другое государство</option>
           </select>
        </p>
        <form>
@@ -65,14 +65,14 @@
         </form>  
        
 
-       <p>Фото профиля: <input type="submit" value="Обзор..."></p>
-       </p>
+       <p>Фото профиля: <input type="file" value="Обзор..."></p>
+     
 
        <p>Введите логин: <input name="login"></p>
        <p>Введите пароль: <input type="password" name="pass"></p>
        <p>Повторите пароль: <input type="password2" name="pass2"></p>
        </fieldset>
-       <p><input type="submit" value="Сброс">  <input type="submit" value="Отправить"></p>
+       <p><input type="reset" value="Сброс">  <input type="submit" value="Отправить"></p>
       </form>
  
 

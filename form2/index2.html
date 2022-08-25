@@ -45,10 +45,10 @@
     <p><textarea rows="10" cols="40" name="text"></textarea></p>
     </form>
     <form>
-      <p>Серетное поле:</p>
+      <p>Секретное поле:</p>
       <p><input type="password" name="secret"></p>
   </form>
-  <p><input type="submit" value="Отправить">  <input type="submit" value="Очистить"></p>
+  <p><input type="submit" value="Отправить">  <input type="reset" value="Очистить"></p>
 
   <form>
     <fieldset>
@@ -56,37 +56,37 @@
        <p>Марка автомобиля: <input name="auto"></p>
        <p>Объем двигателя, см<sup>3</sup>: <input name="engine" placeholder="1900" ></p>
         <p>Область: 
-          <select атрибуты>
-            <option атрибуты>Брестская</option>
-            <option атрибуты>Витебская</option>
-            <option атрибуты>Гомельская</option>
-            <option атрибуты>Гродненская</option>
-            <option атрибуты>Минская</option>
-            <option атрибуты>Могилевская</option>
+          <select name="area">
+            <option value="a1">Брестская</option>
+            <option value="a2">Витебская</option>
+            <option value="a3">Гомельская</option>
+            <option value="a4">Гродненская</option>
+            <option value="a5">Минская</option>
+            <option value="a6">Могилевская</option>
           </select>
         </p>
         <form>
         <p>Тип КПП</p>
-        <p><input name="a" type="radio" value="A"> Автомат</p> 
-        <p><input name="m" type="radio" value="M"> Механика</p>   
+        <p><input name="akp" type="radio" value="A"> Автомат</p> 
+        <p><input name="akp" type="radio" value="M"> Механика</p>   
         </form> 
         <form>
           <p>Двигатель</p> 
-          <p><input id="engine1" type="checkbox">
+          <p><input id="engine1" name="eng" value="electro" type="checkbox">
           <label for="engine1"> Электро</label></p>
-          <p><input id="engine2" type="checkbox">
+          <p><input id="engine2" name="eng" value="disel" type="checkbox">
           <label for="engine2"> Дизель</label></p>
-          <p><input id="engine3" type="checkbox">
+          <p><input id="engine3" name="eng" value="gasoline" type="checkbox">
           <label for="engine3"> Бензин</label></p>
-          <p><input id="engine4" type="checkbox">
+          <p><input id="engine4" name="eng" value="propan" type="checkbox">
           <label for="engine4"> Пропан-бутан</label></p>
-          <p><input id="engine5" type="checkbox">
+          <p><input id="engine5" name="eng" value="metan" type="checkbox">
           <label for="engine5"> Метан</label></p>
         </form>  
 <form>
 <p>Описание</p>
 <p><textarea rows="10" cols="40" name="info"></textarea></p>
-<p><input type="submit" value="Отправить"> <input type="submit" value="Очистить"></p>    
+<p><input type="submit" value="Отправить"> <input type="reset" value="Очистить"></p>    
 </form>
 
 </form>
