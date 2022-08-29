@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="form2.js"></script>
+    <style>
+        h1 {
+          font-size: 50px;
+          color: #6E76F1;
+        }
+    
+        div {
+          margin: 0 auto;
+        }
+    
+        .form-container {
+          width: 400px;
+          padding: 20px;
+        }
+        body {
+        max-width: 800px;
+        margin: 0 auto;
+        }
+      </style>
+</head>
+<body>
+  <form>
+  <table width="100%" border="1" cellspacing="0" cellpadding="4">
+  <caption><b> АНКЕТА </b></caption>
+   <tr>
+  <td>Фамилия</td><td><input name="surname"></td>
+  </tr>
+  <tr>
+  <td>Имя</td><td><input name="name"></td>
+  </tr>
+  <tr>
+  <td>Отчество</td><td><input name="middle_name"></td>
+  </tr>
+  <tr>
+  <td colspan="2">О себе сообщаю следующие сведения:</td>
+  </tr>
+  <tr>
+  <td>Пол</td><td><p><input name="sex" type="radio" value="M"> Мужской</p><p><input name="sex" type="radio" value="W"> Женский</p></td>
+  </tr>
+  <tr>
+  <td>Дата рождения</td><td><input type="date" name="date_of_birth"></td>
+  </tr>
+  <tr>
+  <td>Количество полных лет</td><td><input type="number" size="3" name="age" min="15" max="90" value="18"></td>
+  </tr>
+  <tr>
+  <td>Адрес места жительства (пребывания)</td><td><input name="address"></td>
+  </tr>
+  <tr>
+  <td>Номер контактного телефона</td><td>+375<input type="tel" size="9" name="phone_number"></td>
+  </tr>
+  <tr>
+  <td>Контактный e-mail</td><td><input type="email" name="email"></td>
+  </tr>
+  <tr>
+  <td>Контактный e-mail</td><td><input type="email" name="email2"></td>
+  </tr>
+  <tr>
+  <td>Образование</td><td><p><input name="education" type="radio" value="middle"> -основное общее среднее профессиональное;</p><p><input name="education" type="radio" value="high"> -среднее (полное) общее высшее профессиональное;</p><p><input name="education" type="radio" value="start"> -начальное профессиональное;</p><p><input name="education" type="radio" value="other"> -иное;</p></td>
+  </tr>
+  <tr>
+  <td>Профессия (специальность)</td><td><input name="profession"></td>
+  </tr>
+  <tr>
+  <td>Стаж работы по специальности</td>
+          <td><select name="experience">
+              <option value="1">Менее года</option>
+              <option value="2">1-3 года</option>
+              <option value="3">3-5 лет</option>
+              <option value="4">5-15 лет</option>
+              <option value="5">Более 15 лет</option>
+              </select>
+          </td>
+  </tr>
+  <tr>
+  <td>Предыдущее место работы</td><td><input name="prior_work"></td>
+  </tr>
+  <tr>
+  <td>Период работы на предыдущем месте</td><td>с <input type="date" name="data1"> по <input type="date" name="data2"></td>
+  </tr>
+  <tr>
+  <td colspan="2"><input type="reset" value="Очистить форму"> <input type="button" value="Отправить данные" onclick="checkForm()"></td>
+  </tr>
+  </table>
+</form>
+  </body>
+  </html>
+  
